@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  /*width: 70vw;
+  height: 85vh;
+  background-color: blue;
+  margin: auto;
+  margin-top: 7.5vh;
+  border-radius: 5px;*/
+}
+
+.header {
+  width: 70vw;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  margin: auto;
+  margin-top: 3.25vh;
+}
+
+.notes_main_container {
+  display: flex;
+  height: 100%;
+  width: 70vw;
+  height: 85vh;
+  background-color: #f1f1f1;
+  margin: auto;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.column {
+  width: calc(100%/3);
+}
+
+.note_type_container {
+  border-right: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+}
