@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="notesApp">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,12 @@
   <title>NotesMockup</title>
 </head>
 <body>
-  <main class="main">
+  <main class="main" ng-controller="mainCtrl">
     <header class="header">
     </header>
     <section class="notes_main_container">
       <section class="save_location_container column">
+        <p ng-repeat="note in notes">{{note.location}}</p>
       </section>
       <section class="note_type_container column">
       </section>
@@ -23,7 +24,8 @@
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="./mainCtrl/app.js"></script>
   <script src="./mainCtrl/mainCtrl.js"></script>
-  <script src="./mainCtrl/mainSrvr.js"></script>
+  <script src="./mainCtrl/mainSrvc.js"></script>
 </body>
 </html>
