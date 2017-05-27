@@ -38,9 +38,18 @@ body {
 
 .column {
   width: calc(100%/3);
+  padding: 0px 20px;
 }
 
 .note_type_container {
   border-right: 1px solid #e0e0e0;
   border-left: 1px solid #e0e0e0;
+}
+
+.note_description_container {
+  overflow: scroll;
+}
+
+.current_save_locations, .current_note_topics {
+  cursor: pointer;
 }

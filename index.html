@@ -13,11 +13,13 @@
     </header>
     <section class="notes_main_container">
       <section class="save_location_container column">
-        <p ng-repeat="note in notes">{{note.location}}</p>
+        <p class="current_save_locations" ng-repeat="note in notes" ng-click="setCurrentNoteTopics(note)">{{note.location}}</p>
       </section>
       <section class="note_type_container column">
+        <p class="current_note_topics" ng-repeat="current_note in CurrentNoteTopics" ng-click="setCurrentNote(current_note)">{{current_note.title}}</p>
       </section>
       <section class="note_description_container column">
+        <p class="current_note">{{currentNote}}</p>
       </section>
     </section>
   </main>
