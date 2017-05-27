@@ -5,21 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <title>NotesMockup</title>
 </head>
 <body>
   <main class="main" ng-controller="mainCtrl">
     <header class="header">
+      <section class="header_icon_container">
+        <span class="icon-file-text header_icon"></span>
+        <span class="icon-copy header_icon"></span>
+        <span class="icon-bin header_icon"></span>
+        <span class="icon-pencil header_icon"></span>
+        <span class="icon-lock header_icon"></span>
+      </section>
     </header>
     <section class="notes_main_container">
       <section class="save_location_container column">
-        <p class="current_save_locations" ng-repeat="note in notes" ng-click="setCurrentNoteTopics(note)">{{note.location}}</p>
+        <div ng-repeat="note in notes">
+          <p class="current_save_locations" ng-click="setCurrentNoteTopics(note)">{{note.location}}</p>
+        </div>
       </section>
       <section class="note_type_container column">
-        <p class="current_note_topics" ng-repeat="current_note in CurrentNoteTopics" ng-click="setCurrentNote(current_note)">{{current_note.title}}</p>
+        <div ng-repeat="current_note in CurrentNoteTopics">
+          <p class="current_note_topics" ng-click="setCurrentNote(current_note)">{{current_note.title}}</p>
+          <p class="date">{{current_note.date}}</p>
+        </div>
       </section>
       <section class="note_description_container column">
-        <p class="current_note">{{currentNote}}</p>
+        <div>
+          <p class="note_description_container_date date">{{currentNote.date}}</p>
+          <p class="current_note">{{currentNote.note}}</p>
+        </div>
       </section>
     </section>
   </main>

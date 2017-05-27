@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main {
@@ -13,16 +14,37 @@ body {
   margin: auto;
   margin-top: 7.5vh;
   border-radius: 5px;*/
+  position: relative;
 }
 
 .header {
   width: 70vw;
   height: 40px;
+  position: relative;
   background-color: #e0e0e0;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   margin: auto;
   margin-top: 3.25vh;
+}
+
+.header_icon_container {
+  width: 30vw;
+  position: absolute;
+  right: 15px;
+  top: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_icon {
+  font-size: 24px;
+  color: #939393;
+  border: 1px solid #939393;
+  border-radius: 5px;
+  padding: 3px 10px;
+  background-color: white;
+  text-align: center;
 }
 
 .notes_main_container {
@@ -46,8 +68,22 @@ body {
   border-left: 1px solid #e0e0e0;
 }
 
+.current_note_topics {
+  margin-bottom: 2px;
+}
+
+.date {
+  color: #939393;
+  margin: 0px;
+}
+
 .note_description_container {
   overflow: scroll;
+}
+
+.note_description_container_date {
+  text-align: center;
+  margin-top: 15px;
 }
 
 .current_save_locations, .current_note_topics {

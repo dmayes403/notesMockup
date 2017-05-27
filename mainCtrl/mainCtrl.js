@@ -9,7 +9,7 @@ angular.module('notesApp')
       }
 
       $scope.setCurrentNote = function(NoteObject){
-        $scope.currentNote = NoteObject.note;
+        $scope.currentNote = NoteObject;
         console.log($scope.currentNote);
       }
   })
