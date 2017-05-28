@@ -27,7 +27,7 @@
         </div>
       </section>
       <section class="note_type_container column">
-        <div ng-repeat="current_note in CurrentNoteTopics">
+        <div class="current_note_type" ng-repeat="current_note in CurrentNoteTopics">
           <p class="current_note_topics" ng-click="setCurrentNote(current_note)">{{current_note.title}}</p>
           <p class="date">{{current_note.date}}</p>
         </div>
