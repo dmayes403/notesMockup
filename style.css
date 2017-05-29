@@ -47,6 +47,14 @@ body {
   text-align: center;
 }
 
+.header_icon:hover {
+  background-color: #a7ffff;
+}
+
+.icon-lock {
+  padding-left: 17px;
+}
+
 .notes_main_container {
   display: flex;
   height: 100%;
